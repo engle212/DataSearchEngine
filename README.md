@@ -6,3 +6,5 @@ The frontend of this project is implemented solely using JavaScript and the Open
 The frontend code gets the data from the GeoServer in the form of GeoJSON and displays it cartographically to the user using OpenLayers.
 Under the map display, a table of the selected points is shown when the user selects points by clicking or box selection.
 When a point is selected, it is enlarged and highlighted on the map.
+
+To use this project, supply a CSV file named '''imageProperties.csv''' into the '''my-app''' directory.
