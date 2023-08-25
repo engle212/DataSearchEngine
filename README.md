@@ -1,6 +1,6 @@
 # DataSearchEngine
 
-This project was created as part of my work as Research Assistant. It gave me valuable experience in web development and data handling.
+This project was created as part of my role as Research Assistant. It gave me valuable experience in web development and data handling.
 I used Python to relay data to and from a PostgreSQL database and upload data to a GeoServer. 
 The frontend of this project is implemented solely using JavaScript and the OpenLayers library.
 The frontend code gets the data from the GeoServer in the form of GeoJSON and displays it cartographically to the user using OpenLayers.
@@ -17,3 +17,4 @@ password=
 ```
 
 Lastly, set up a GeoServer and change the `geoserverComm.py` file so its URL, username, and password match the GeoServer's.
+The site is ready to go after completing the all of the previous instructions.
