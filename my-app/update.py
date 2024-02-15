@@ -8,7 +8,7 @@ from geoserverComm import uploadShapeFileToGeoserver
 columnList = ['data_id', 'file_path_year', 'remarks', 'date', 'farm_name', 'sensor_name', 'ground_control_points', 'spatial_resolution', 'fly_altitude', 'raw_images', 'bands', 'lat', 'lon', 'geom', 'file_path']
 
 #             latitude  longitude  radius
-queryBuffer = [39.9612, -82.9988, 0.5]
+queryBuffer = [39.9612, -82.9988, 5]
 
 def update():
     """ Connect to the PostgreSQL database server """

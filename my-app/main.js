@@ -51,8 +51,9 @@ function init() {
     layers: [
       new ol.layer.Tile({
         source: new ol.source.OSM({
-          url: 'https://stamen-tiles.a.ssl.fastly.net/toner-lite/{z}/{x}/{y}.png'
+          url: 'https://cdn.lima-labs.com/{z}/{x}/{y}.png?api=demo'
         }) // Use OpenStreetMap as the base layer
+        // If it doesn't load, try changing URL
       }),
       vectorLayer
     ],

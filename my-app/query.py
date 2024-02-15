@@ -22,7 +22,6 @@ def query_data(conn, uri, columns=['*'], buffer=[]):
         cur.execute(queryStatement)
         geoDF = gpd.GeoDataFrame.from_postgis(queryStatement, conn, index_col=None)
         geoDF.to_crs(4326, inplace=True)
-        print(geoDF.to_string())
 
         geoDF['date']=geoDF['date'].astype(str)
 
