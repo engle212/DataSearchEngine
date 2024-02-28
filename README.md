@@ -14,6 +14,7 @@ database=postgres
 user=
 password=
 ```
+This `database.ini` file is likely already created. If it is present in the `my-app` folder, fill in the fields with the credentials used to set up the postgreSQL server.
 
 Lastly, set up a GeoServer and change the `geoserverComm.py` file so its URL, username, and password match the GeoServer's.
 The site is ready to go after completing the all of the previous instructions.
