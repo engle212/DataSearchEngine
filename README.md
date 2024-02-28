@@ -21,5 +21,5 @@ The site is ready to go after completing the all of the previous instructions.
 Below is a link to instructions on how to set up GeoServer.
 https://docs.geoserver.org/main/en/user/installation/win_binary.html
 
-To set up PostgreSQL, follow the instructions in the link below.
+To set up PostgreSQL, follow the instructions in the subsequent link.
 https://www.postgresql.org/docs/current/install-binaries.html
