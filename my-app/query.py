@@ -3,6 +3,7 @@ import shapely
 import shapely.wkt
 import geopandas as gpd
 from config import config
+import os
 
 def query_data(conn, uri, columns=['*'], buffer=[]):
     """ Connect to the PostgreSQL database server """
@@ -25,8 +26,10 @@ def query_data(conn, uri, columns=['*'], buffer=[]):
 
         geoDF['date']=geoDF['date'].astype(str)
 
+        if not os.path.isdir('C:\\ShapeFiles\\'):
+          os.mkdir('C:\\ShapeFiles\\')
         #geoDF.to_file('dataframe.json', driver='GeoJSON')
-        geoDF.to_file('C:\\ShapeFiles\\dataframe', mode='w')
+        geoDF.to_file('C:\\ShapeFiles\\dataframe\\', mode='w')
 
         return geoDF
        

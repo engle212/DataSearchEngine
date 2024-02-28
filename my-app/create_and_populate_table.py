@@ -11,7 +11,7 @@ def create_and_populate(conn):
     #CREATE EXTENSION postgis;
     command = (
         """
-        
+        CREATE EXTENSION postgis;
         CREATE TABLE data_sets (
                 data_id INTEGER PRIMARY KEY,
                 file_path_year INTEGER NOT NULL,
@@ -32,9 +32,9 @@ def create_and_populate(conn):
         """     )
     try:
         # read the connection parameters
-        #params = config()
+        params = config()
         # connect to the PostgreSQL server
-        #conn = psycopg2.connect(**params)
+        conn = psycopg2.connect(**params)
 
         cur = conn.cursor()
         # create table
