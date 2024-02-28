@@ -33,3 +33,6 @@ https://docs.geoserver.org/main/en/user/installation/win_binary.html
 
 To set up PostgreSQL, follow the instructions in the subsequent link.
 https://www.postgresql.org/docs/current/install-binaries.html
+
+This project is available as a GitHub repository at the following link. 
+https://github.com/engle212/DataSearchEngine
